@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --user-avatar-size: 200px;
+    --light-dark-color: rgb(131, 131, 131);
+    --btn-color: rgb(0, 171, 163);
+    --light-color: white;
+    --twitter-accent-color:rgb(0, 162, 255);
+    --facebook-accent-color: rgb(72, 90, 177);
+    --google-accent-color: rgb(255, 111, 0);
+    --behance-accent-color: rgb(0, 89, 255);
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-card {
+    max-width: 450px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    gap: 2rem;
+    padding: 6rem 2rem 3rem 2rem;
+    position: relative;
+}
+
+.main-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    color: var(--light-dark-color);
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.user-avatar {
+    position: relative;
+    display: inline-block;
+    margin-top: -2rem; 
+}
+
+.user-avatar-img {
+    width: var(--user-avatar-size);
+    height: var(--user-avatar-size);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.status {
+    position: absolute;
+    background-color: green;
+    color: var(--light-color);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1.5rem;
+    right: 0;
+    left: 9rem;
+    margin: 0 auto;
+    box-shadow: 0 0 2px 8px rgba(51, 255, 0, 0.2);
+}
+
+.card-h2 {
+    font-size: 1.5rem;
+}
+
+.desc {
+    color: var(--light-dark-color);
+    margin-top: -1.5rem;
+}
+
+.social-info {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.title {
+    color: var(--light-dark-color);
+    font-size: 0.9rem;
+}
+
+.value {
+    color:inherit;
+    font-size: 1.3rem;
+}
+
+.main-text {
+    color: var(--light-dark-color);
+}
+
+.contact-links {
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.btn-link {
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid var(--btn-color);
+    border-radius: 30px;
+    width: 60%;
+    background-color: var(--btn-color);
+    padding: 1em;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn-link:hover {
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.30);
+    font-weight: bold;
+}
+
+.btn-link:active {
+    color: var(--btn-color);
+    background-color: var(--light-color);
+}
+
+.twitter {
+    background-color: var(--twitter-accent-color);
+}
+
+.twitter:hover {
+    box-shadow: 0 0 20px 5px var(--twitter-accent-color);
+}
+
+.twitter:active {
+    color: var(--twitter-accent-color);
+    border: 1px solid var(--twitter-accent-color);
+}
+
+.facebook {
+    background-color: var(--facebook-accent-color);
+}
+
+.facebook:hover {
+    box-shadow: 0 0 20px 5px var(--facebook-accent-color);
+}
+
+.facebook:active {
+    color: var(--facebook-accent-color);
+    border: 1px solid var(--facebook-accent-color);
+}
+
+.google {
+    background-color: var(--google-accent-color);
+}
+
+.google:hover {
+    box-shadow: 0 0 20px 5px var(--google-accent-color);
+}
+
+.google:active {
+    color: var(--google-accent-color);
+    border: 1px solid var(--google-accent-color);
+}
+
+.behance {
+    background-color: var(--behance-accent-color);
+}
+
+.behance:hover {
+    box-shadow: 0 0 20px 5px var(--behance-accent-color);
+}
+
+.behance:active {
+    color: var(--behance-accent-color);
+    border: 1px solid var(--behance-accent-color);
+}
+
+.twitter:active,
+.facebook:active,
+.google:active,
+.behance:active {
+    background-color: var(--light-color);
+}
+
+.social-icon-size {
+    color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+}
