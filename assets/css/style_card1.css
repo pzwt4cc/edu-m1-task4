@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --user-avatar-size: 200px;
+    --gray-light: rgb(245, 245, 245);
+    --btn-accent-color: rgb(33, 144, 255);
+    --online-status-color:rgb(16, 156, 16);
+    --star-color: rgb(210, 210, 210);
+    --main-text-color: rgb(125, 125, 125);
+    --main-light-color: white;
+    --bg-color: rgb(216, 216, 216);
+    --btn-active-color: rgb(46, 193, 246);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.user-card{
+    max-width: 400px;
+    min-width: 250px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.user-card:hover {
+    box-shadow: 0 15px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-avatar-img {
+    width: var(--user-avatar-size);
+    height: var(--user-avatar-size);
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.user-avatar {
+    display: inline-block;
+    position: relative;
+}
+
+.white-zone,
+.gray-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.white-zone {
+    background-color: var(--main-light-color);
+}
+
+.gray-zone {
+    background-color: var(--gray-light);
+    height: 100%;
+}
+
+.card-h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.main-text,
+.status {
+    color: var(--main-text-color);
+}
+
+.desc,
+.locate {
+    font-weight: bold;
+}
+
+.card-btn {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 70%;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.user-star {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0.5rem; 
+    border-radius: 50%;
+    background-color: var(--main-light-color);
+    color: var(--star-color);
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-star:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.line-bg-btn {
+    border: 1px solid var(--btn-accent-color);
+    color: var(--btn-accent-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.line-bg-btn:hover {
+    background-color: var(--btn-accent-color);
+    color: var(--main-light-color);
+}
+
+.line-bg-btn:active {
+    background-color: var(--btn-active-color);
+    border-color: var(--btn-active-color);
+}
+
+.full-bg-btn {
+    border: 1px solid var(--btn-accent-color);
+    background-color: var(--btn-accent-color);
+    color: var(--main-light-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.full-bg-btn:hover {
+    background-color: var(--main-light-color);
+    color: var(--btn-accent-color);
+    border: 1px solid var(--btn-accent-color);
+}
+
+.full-bg-btn:active {
+    background-color: var(--btn-active-color);
+    border-color: var(--btn-active-color);
+    color: var(--main-light-color);
+}
+
+.social-status {
+    color: var(--online-status-color);
+}
+
+.status {
+    font-size: 0.8rem;
+    padding-top: 0.5em;
+}
